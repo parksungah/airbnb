@@ -1,0 +1,314 @@
+/* 초기화 */
+* {
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
+}
+
+#main-page{
+    /* 백그라운드 */
+    background: url(image/bg.jpg) no-repeat center center;
+    background-size: cover;
+    height: 85vh;
+}
+.main-navi{
+    padding: 0 151.5px;
+    height: 80px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.main-navi .logo {
+    height: 80px;
+    display: flex;
+    align-items:center;
+}
+.main-navi .logo i{
+    font-size: 35px;
+    font-weight: 400;
+    margin-right: 7px;
+}
+.main-navi .logo a{
+    text-decoration: none;
+    font-size: 24px;
+    color: #FF385C;
+    font-weight: 900;
+    display: flex;
+}
+.main-navi .search{
+    width: 300px;
+    height: 48px;
+    border: 1px solid rgb(214, 214, 214);
+    border-radius: 24px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    outline: none;
+    padding: 0 10px;
+    font-weight: bold;
+    background-color: white;
+    font-size: 14px;
+}
+.main-navi .search:hover{
+    box-shadow: 3px 3px 3px lightgray;
+    cursor: pointer;
+}
+
+.main-navi .search .r-icon{
+    background-color: #ff385c;
+    border-radius: 50%;
+    padding: 10px; 
+    color: white;
+    align-items: center;
+}
+
+.menu span{
+    text-decoration: none;
+    font-size: 14px;
+    margin-right: 10px;
+    padding: 8px 13px;
+    border-radius: 20px;
+}
+
+.menu span:hover{
+    background-color: #F7F7F7;
+    padding: 8px 13px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.m-icon{
+    border:1px solid; 
+    border-color:rgb(202, 202, 202);
+    border-radius: 20px;
+    padding: 10px 15px;
+}
+
+.m-icon:hover{
+    background-color:white !important;
+    box-shadow: 3px 3px 3px lightgray;
+    cursor: pointer;
+}
+
+
+
+.main-title{
+    padding: 0 151.5px;
+    margin-top: 250px;
+    color: white;
+    font-size: 3.2em;
+    font-weight: 800;
+    letter-spacing:-0.02em;
+    line-height: 56px;
+}
+#main-page .main-title .mtb{
+    padding: 7px 15px; 
+    border-radius: 8px;
+    text-align: center;
+    font-size: 14px;
+    background-color: white;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+
+#local {
+    padding: 50px 151.5px;
+}
+#local .grid{
+    display: grid;
+    grid-template-columns: repeat(4,minmax(232px, 1fr));
+}
+.city{
+    display: flex;
+    vertical-align: middle;
+    align-items: center;
+}
+.city-image{
+    border-radius: 10px;
+    margin: 5px 0;
+}
+
+.city-image:hover{
+    cursor: pointer;
+}
+
+.city-text{
+    padding-left: 15px;
+}
+
+.city-text:hover{
+    cursor: pointer;
+}
+
+
+
+#everywhere{
+    padding: 0 151.5px;
+    font-size: 32px;
+}
+#everywhere .grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.house{
+    margin: 20px 0 48px 0;
+    font-size: 18px;
+
+}
+.house-image{
+    margin-right: 17px;
+}
+
+.house-image:hover{
+    cursor: pointer;
+}
+
+.house-text{
+    font-weight: bold;
+}
+
+.house-text:hover{
+    cursor: pointer;
+}
+
+
+
+#online-life{
+    background-color: black;
+    padding: 50px 151.5px;
+    color: white;
+    object-fit: cover;
+}
+#online-life .container{
+    display: flex;
+    justify-content: space-between;
+}
+
+#online-life .container .around{
+    border-color:white;
+    border-radius: 10px;
+    background-color: black;
+    color:white;
+    padding: 7px 15px;
+    font-size: 14px;
+}
+
+#online-life .container .around:hover{
+    cursor: pointer;
+    background-color: gray;
+}
+
+#online-life .grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+}
+.life{
+    position: relative;
+}
+.life:first-child{
+    grid-row: 1/3;
+    grid-column: 1/3;
+}
+.life:nth-child(4){
+    grid-column: 3/5;
+}
+
+.life-image:hover{
+    cursor: pointer;
+}
+
+.life-text{ 
+    color: white;
+    position: absolute;
+    bottom: 50px;
+}
+
+
+
+#host{
+    padding: 50px 151.5px;
+    min-height:400px;
+}
+
+#host .grid{
+    display: grid;
+    margin-top: 30px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.host-image{
+    margin-right: 17px;
+    min-width: 272px;
+}
+
+.host-image:hover{
+    cursor: pointer;
+}
+
+.host-text:hover{
+    cursor: pointer;
+}
+
+
+#list{
+    padding: 50px 151.5px 20px 151.5px;
+    background-color: #F7F7F7;
+    font-size: 13px;
+    border-top: 1px solid #DDDDDD;
+}
+
+#list .item a{
+    text-decoration: none;
+    color: black;
+}
+
+#list .item a:hover{
+    color:rgb(75, 75, 75);
+    text-decoration: underline;
+}
+
+#list .grid{
+    display: grid;
+    grid-template-columns: repeat(4,minmax(200px, 1fr));
+}
+
+#footer{
+    padding: 30px 151.5px;
+    background-color: #F7F7F7;
+    font-size: 14px;
+}
+
+#footer .grid{
+    display: flex;
+    justify-content: space-between; 
+}
+
+
+#footer .item a{
+    text-decoration: none;
+    color: black;
+}
+
+#footer .item a:hover{
+    text-decoration: underline;
+    color:rgb(75, 75, 75);
+}
+
+
+#footer .item span{
+    margin-right: 18px;
+}
+
+#footer .item span:hover{
+    color:rgb(75, 75, 75);
+    cursor: pointer;
+}
+
